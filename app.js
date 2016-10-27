@@ -9,6 +9,11 @@ window.onload = function() {
      var title = document.getElementById('title-page');
      title.style.display = "block";
    }, 1700);
+
+   setTimeout(function(){
+     var audioPlayer = document.getElementById('audio');
+     audioPlayer.play();
+   }, 1800);
 };
 
 
