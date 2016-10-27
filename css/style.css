@@ -1,0 +1,117 @@
+body {
+
+}
+
+div#loader {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+div#title-page {
+  display: none;
+}
+
+div.title {
+  text-align: center;
+  font-size: 120px;
+}
+
+.jiterry span{
+  animation:jitter 300ms linear infinite;
+  display:inline-block;
+  font-family: 'Patrick Hand SC', cursive;
+  margin-bottom: 1.6em;
+}
+
+
+p.credits {
+  font-size: 30px;
+  padding-bottom: 0px;
+  margin-bottom: .3em;
+  font-family: 'Patrick Hand', cursive;
+}
+
+@keyframes jitter{
+  40%{transform:skewY(1deg) skewX(-1deg) scale(1.0011);}
+  70%{transform:skewY(1.8deg) skewX(-1.8deg) scale(1.011);}
+}
+
+p.stanza {
+  font-size: 26px;
+  margin-top: 5em;
+  font-family: 'Patrick Hand', cursive;
+}
+
+p.stanza.purple-ify {
+  color: rgb(244, 246, 244);
+}
+
+#slide-11 {
+  background-color: #8e44ad;
+}
+
+#slide-12 {
+  background-color: #8e44ad;
+}
+
+div.green-power {
+  width: 100%;
+  height: 100%;
+  background-color: #2FCC71;
+}
+
+mark.purple {
+  color: #8e44ad;
+  font-style: normal;
+  background: none;
+}
+
+mark.purple1 {
+  color: #c393d5;
+  font-style: normal;
+  background: none;
+}
+
+mark.green {
+  color: #2FCC71;
+  font-style: normal;
+  background: none;
+}
+
+mark.white {
+  color: #bdc3c7;
+  font-style: normal;
+  background: none;
+}
+
+mark.red {
+  color: #E84C3D;
+  font-style: normal;
+  background: none;
+}
+
+mark.orange {
+  color: #e67e22;
+  font-style: normal;
+  background: none;
+}
+
+mark.yellow {
+  color: #F1C40F;
+  font-style: normal;
+  background: none;
+}
+
+mark.blue {
+  color: #23C3F1;
+  font-style: normal;
+  background: none;
+}
+
+mark.brown {
+  color: rgb(126, 76, 47);
+  font-style: normal;
+  background: none;
+}
