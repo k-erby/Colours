@@ -20,7 +20,6 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" type="text/css" href="css/loader.css">
   <link rel="stylesheet" type="text/css" href="css/grid.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -32,31 +31,21 @@
       <link rel="stylesheet" media="screen" href="themes/style/swiss.css">
       <!-- Required Modernizr file -->
       <script src="modernizr.custom.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-  <!-- Audio
-    Audio is from:
-    http://bit.ly/2dMLlYH
-  -->
-  <audio src="sounds/DT.mp3" id = "audio"></audio>
-
-
+  <script src="jitter.js"></script>
 </head>
-<body>
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="deck-container">
-    <div id="loader">
-      <h1></h1>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
 
+<body>
+  <!-- Audio is from: http://bit.ly/2dMLlYH -->
+  <iframe src="sounds/DT.mp3" allow="autoplay" id="audio"></iframe>
+
+  <main class="deck-container">
     <section class="slide">
       <div id="title-page">
         <div class="row">
-            <div class="col-12 title" style="margin-top: 5%">
-              <span class="jiterry"> C O L O U R S</span>
+            <div class="col-12 title">
+              <span class="jittery"> C O L O U R S</span>
             </div>
         </div>
 
@@ -228,27 +217,21 @@
 
     <section class = "slide">
       <div class="row">
-          <div class="col-12 end" style="margin-top: 5%">
-            <span class="jiterry2"> T H E	&nbsp E N D</span>
+          <div class="col-12 end">
+            <span class="jittery2"> T H E	&nbsp E N D</span>
           </div>
 
           <div class="row">
               <div class="offset-by-two-thirds">
-                <p class = "end-credits"> Merry Christmas, <br>Kaitlin Erb</p>
+                <p class = "end-credits">Kaitlin Erb</p>
               </div>
           </div>
       </div>
     </section>
-
-  </div>
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- Required JS files. -->
-  <script src="jquery.min.js"></script>
-  <script src="app.js"></script>
-  <script src="core/deck.core.js"></script>
+  </main>
 
   <!-- Initialize the deck. You can put this in an external file if desired. -->
+  <script src="core/deck.core.js"></script>
   <script>
     $(function() {
       $.deck('.slide');
