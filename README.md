@@ -1,6 +1,8 @@
 # Colours
 
-Little baby project I did as a gift for my mom. 
+Little baby project I started as a gift to my mom 3 years ago. Still needs art
+to go along with the story, but I'll get to that at some point.
 
-I probably _should_ go through this and fix everything, but that seems like
-too much effort for too little reward.
+**Read it here:**
+
+https://k-erby.github.io/Colours/
