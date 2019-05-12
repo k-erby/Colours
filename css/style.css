@@ -8,33 +8,20 @@ div.title, div.end {
   margin-top: 5%;
 }
 
-.jittery span{
+.jittery span, .jittery2 span {
   animation:jitter 300ms linear infinite;
   display:inline-block;
   font-family: 'Patrick Hand SC', cursive;
   margin-bottom: 1.6em;
 }
 
-.jittery2 span{
-  animation:jitter 300ms linear infinite;
-  display:inline-block;
-  font-family: 'Patrick Hand SC', cursive;
-  margin-bottom: 1.6em;
-  color: rgb(244, 246, 244);
+.jittery2 span {
+  color: #f4f6f4;
 }
 
 p.credits {
   font-size: 30px;
-  padding-bottom: 0px;
   margin-bottom: .3em;
-  font-family: 'Patrick Hand', cursive;
-}
-
-p.end-credits {
-  font-size: 30px;
-  padding-bottom: 0px;
-  margin-bottom: .3em;
-  color: rgb(244, 246, 244);
   font-family: 'Patrick Hand', cursive;
 }
 
@@ -42,13 +29,7 @@ p#the-end {
   text-align: center;
   font-size: 120px;
   font-family: 'Patrick Hand SC', cursive;
-
   margin-top: 0.7em;
-}
-
-@keyframes jitter{
-  40%{transform:skewY(1deg) skewX(-1deg) scale(1.0011);}
-  70%{transform:skewY(1.8deg) skewX(-1.8deg) scale(1.011);}
 }
 
 p.stanza {
@@ -57,19 +38,11 @@ p.stanza {
   font-family: 'Patrick Hand', cursive;
 }
 
-p.stanza.purple-ify {
-  color: rgb(244, 246, 244);
+p.stanza.invert-text-color {
+  color: #f4f6f4;
 }
 
-#slide-11 {
-  background-color: #8e44ad;
-}
-
-#slide-12 {
-  background-color: #8e44ad;
-}
-
-#slide-13 {
+#slide-11, #slide-12, #slide-13 {
   background-color: #8e44ad;
 }
 
@@ -77,62 +50,20 @@ p.stanza.purple-ify {
   background-color: #2FCC71;
 }
 
-mark.purple {
-  color: #8e44ad;
-  font-style: normal;
-  background: none;
+/* I miss you, scss. */
+mark.white    { color: #bdc3c7; font-style: normal; background: none; }
+mark.red      { color: #E84C3D; font-style: normal; background: none; }
+mark.orange   { color: #e67e22; font-style: normal; background: none; }
+mark.yellow   { color: #F1C40F; font-style: normal; background: none; }
+mark.green    { color: #2FCC71; font-style: normal; background: none; }
+mark.blue     { color: #23C3F1; font-style: normal; background: none; }
+mark.purple   { color: #8e44ad; font-style: normal; background: none; }
+mark.purple2  { color: #c393d5; font-style: normal; background: none; }
+mark.brown    { color: #7e4c2f; font-style: normal; background: none; }
+mark.brown2   { color: #CD893F; font-style: normal; background: none; }
+
+@keyframes jitter{
+  40%{transform:skewY(1deg) skewX(-1deg) scale(1.0011);}
+  70%{transform:skewY(1.8deg) skewX(-1.8deg) scale(1.011);}
 }
 
-mark.purple1 {
-  color: #c393d5;
-  font-style: normal;
-  background: none;
-}
-
-mark.green {
-  color: #2FCC71;
-  font-style: normal;
-  background: none;
-}
-
-mark.white {
-  color: #bdc3c7;
-  font-style: normal;
-  background: none;
-}
-
-mark.red {
-  color: #E84C3D;
-  font-style: normal;
-  background: none;
-}
-
-mark.orange {
-  color: #e67e22;
-  font-style: normal;
-  background: none;
-}
-
-mark.yellow {
-  color: #F1C40F;
-  font-style: normal;
-  background: none;
-}
-
-mark.blue {
-  color: #23C3F1;
-  font-style: normal;
-  background: none;
-}
-
-mark.brown {
-  color: rgb(126, 76, 47);
-  font-style: normal;
-  background: none;
-}
-
-mark.brown2 {
-  color: #CD893F;
-  font-style: normal;
-  background: none;
-}
